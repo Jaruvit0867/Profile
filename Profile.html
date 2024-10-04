@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <style>
+        /* พื้นหลังของหน้า */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #2196F3, #4CAF50);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        /* กล่องโปรไฟล์ */
+        .profile-container {
+            background: #ffffff;
+            width: 400px;
+            padding: 20px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-container:hover {
+            transform: translateY(-8px);
+        }
+
+        /* รูปโปรไฟล์ */
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #FF5722;
+            object-fit: cover;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* ข้อมูลนักศึกษา */
+        .student-info h2 {
+            margin: 12px 0;
+            color: #333;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .student-info h3 {
+            margin: 8px 0;
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .student-info p {
+            color: #555;
+            font-size: 0.95em;
+            margin: 5px 0;
+        }
+        
+        /* เน้นข้อมูล */
+        .student-info p span {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        /* ส่วนแสดงผลงาน */
+        .projects {
+            margin-top: 20px;
+            text-align: left;
+        }
+        
+        .projects h3 {
+            color: #FF5722;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+        
+        .project-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .project-links li {
+            margin: 10px 0;
+        }
+
+        .project-links li a {
+            text-decoration: none;
+            color: #2196F3;
+            font-weight: bold;
+            background: #f1f1f1;
+            padding: 10px 15px;
+            border-radius: 8px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .project-links li a:hover {
+            background: #FF5722;
+            color: #fff;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-container">
+    <img src="nnnn.jpg" alt="Profile Picture" class="profile-image">
+    <div class="student-info">
+        <h2>ชื่อ จารุวิทย์ แสงแก้วสิริกุล</h2>
+        <h3>รหัสนักศึกษา: <span>653450086-7</span></h3>
+        <p>อีเมล: <span>jaruvit.s@kkumail.com</span></p>
+        <p>สาขาวิชา: <span>วิทยาการคอมพิวเตอร์</span></p>
+    </div>
+    
+    <div class="projects">
+        <h3>ผลงานนักศึกษา</h3>
+        <ul class="project-links">
+            <li><a href="https://jaruvit0867.github.io/Weather/index.html" target="_blank">Frontend Project</a></li>
+            <li><a href="https://github.com/Jaruvit0867/LAB4" target="_blank">OOP Project</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
